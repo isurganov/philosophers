@@ -6,7 +6,7 @@
 #    By: spzona <spzona@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/20 15:53:07 by spzona            #+#    #+#              #
-#    Updated: 2022/06/21 15:55:29 by spzona           ###   ########.fr        #
+#    Updated: 2022/06/21 18:18:38 by spzona           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ all			:	${NAME}
 ${NAME}		:	${OBJ}
 
 %.o			:	%.c	${HEADER}
-	@gcc ${FLAGS} -O2 -c $< -o $@ -MD
+	@cc ${FLAGS} -O2 -c $< -o $@ -MD
 
 include ${wildcard ${OBJ_D}}
 

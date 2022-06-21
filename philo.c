@@ -21,7 +21,7 @@ int	main(int argc, char *argv[])
 	program = program_init();
 	if (program == NULL)
 		return (malloc_error() + free_all(program, 0) + FAILURE);
-	if (loading_data_values_input(program->values_input, argc, argv) == FAILURE)
+	if (loading_data_values_input(program->values_input, argc, argv) == false)
 		return (values_inputs_error() + free_all(program, 0) + FAILURE);
 	if (status_init(program) == false)
 		return (malloc_error() + free_all(program, 0) + FAILURE);
