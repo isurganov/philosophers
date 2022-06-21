@@ -6,15 +6,15 @@
 #    By: spzona <spzona@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/20 15:53:07 by spzona            #+#    #+#              #
-#    Updated: 2022/06/20 20:45:13 by spzona           ###   ########.fr        #
+#    Updated: 2022/06/21 15:55:29 by spzona           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=	philo
+NAME		=	philo
 
-HEADER	=	philo.h
+HEADER		=	philo.h
 
-FLAGS		=	-Wall -Wextra -Werror -pthread -O2
+FLAGS		=	-Wall -Wextra -Werror -pthread
 
 SRC			=	actions.c		args.c		errors.c \
 				init.c			philo.c		process.c \
@@ -24,22 +24,22 @@ OBJ			=	${SRC:.c=.o}
 OBJ_D		=	${patsubst %.c,%.d,${SRC}}
 
 all			:	${NAME}
-
-${NAME}		:	${OBJ} ${HEADER}
 	@echo "Philos are ready to roll!"
 
+${NAME}		:	${OBJ}
+
 %.o			:	%.c	${HEADER}
-	@cc ${FLAGS} -c $< -o $@ -MD
+	@gcc ${FLAGS} -O2 -c $< -o $@ -MD
 
 include ${wildcard ${OBJ_D}}
 
 clean		:
 	@rm -f ${OBJ} ${OBJ_D}
-	@echo "OBJS and DEPS are dead"
+	@echo "OBJS are dead"
 
 fclean		:	clean
 	@rm -f ${NAME}
-	@echo "Philos are dead" 
+	@echo "Philos are dead"
 
 re			:	fclean all
 

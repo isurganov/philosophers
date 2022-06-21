@@ -91,7 +91,7 @@ int			values_inputs_error(void);
 t_program	*program_init(void);
 bool		status_init(t_program *data);
 bool		philo_init(t_program *data, int i);
-int			strlen(char *str);
+int			ft_strlen(char *str);
 void		*ft_calloc(size_t count, size_t size);
 int			free_all(t_program *data, int i);
 bool		is_num(char *str);

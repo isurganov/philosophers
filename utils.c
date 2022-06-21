@@ -6,7 +6,7 @@
 /*   By: spzona <spzona@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 17:48:25 by spzona            #+#    #+#             */
-/*   Updated: 2022/06/20 21:19:15 by spzona           ###   ########.fr       */
+/*   Updated: 2022/06/21 15:44:30 by spzona           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_calloc(size_t count, size_t size)
 	return (data);
 }
 
-int	strlen(char *str)
+int	ft_strlen(char *str)
 {
 	int	i;
 
