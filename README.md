@@ -33,7 +33,7 @@ All src and header files compile via Makefile commands. Right now there is only 
 
 
 
-### Final grade: 101/100
+### Final grade: 100/100
 
 <img src="./demo/score.png" height="125" alt="Score"> <br></br>
 
