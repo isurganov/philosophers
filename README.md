@@ -24,14 +24,16 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Solo project in school 21 (Ecole 42 franchise) about working with threads.
+Solo project in school 21 (Ecole 42 franchise) about working with multithreading.
+
+All src and header files compile via Makefile commands. Right now there is only one bonus feature and all mandatory ones.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-### Final grade: ?/100
+### Final grade: 101/100
 
 <img src="./demo/score.png" height="125" alt="Score"> <br></br>
 
@@ -90,6 +92,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Ivan Surganov - [@isurganov](https://www.linkedin.com/in/ivansurganov/) - devsurganov@gmail.com
 
-Project Link: [https://github.com/isurganov/philosophers.git](https://github.com/isurganov/philosophers.git)
+Project Link: [https://github.com/isurganov/philosophers](https://github.com/isurganov/philosophers)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
